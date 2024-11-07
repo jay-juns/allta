@@ -24,6 +24,7 @@ body {
 .header .wrapper {
     width:100%;
     max-width:72.6rem;
+    height:calc(100% - 10.61rem);
     margin:0 auto;
     padding:0 2rem;
     border:1px solid transparent;
