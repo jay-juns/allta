@@ -48,8 +48,6 @@
     font-weight: 700;
     src: url('../fonts/GmarketSansTTFBold.ttf') format('truetype');
 }
-
-
 /* ------------------------------------------ reset ------------------------------------------ */
 html {margin:0; padding:0; font-size:62.5%;}
 @media screen and (max-width:1023px) { html {font-size:10px} }
@@ -61,21 +59,19 @@ body, input, select, button, textarea, h1, h2, h3, h4, h5, h6, table, font {colo
 label {vertical-align:middle}
 address, em {font-style:normal}
 fieldset, img {border:0; vertical-align:middle}
-button {border:0; background-color:transparent; vertical-align:middle; cursor:pointer; outline:none;}/* 2021-04-05 수정 */
+button {border:0; background-color:transparent; vertical-align:middle; cursor:pointer; outline:none;}
 /* button > span {position:relative;} */
 ul, ol, dl, dd, li {list-style:none}
 input, textarea, select {border:0; vertical-align:middle;}
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display:block}
-a {text-decoration:none; color:#212121; outline:none;}/* 2021-04-05 수정 */
+a {text-decoration:none; color:#212121; outline:none;}
 a:hover {text-decoration:none}
 table {width:100%; border-spacing:0; border-collapse:collapse;}
 iframe {margin:0; border:0; width:100%; height:100%}
-
+body, input, select, button, textarea, h1, h2, h3, h4, h5, h6, table, font, p {margin:0;}
 input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="email"], select {-webkit-box-sizing:border-box;box-sizing:border-box; -webkit-border-radius:0; -webkit-appearance:none;}
-input[type="text"]::-ms-reveal, input[type="password"]::-ms-reveal, input[type="number"]::-ms-reveal, input[type="tel"]::-ms-reveal, input[type="email"]::-ms-reveal {display: none; width:0; height: 0;}/* 2021-04-08 수정 */
+input[type="text"]::-ms-reveal, input[type="password"]::-ms-reveal, input[type="number"]::-ms-reveal, input[type="tel"]::-ms-reveal, input[type="email"]::-ms-reveal {display: none; width:0; height: 0;}
 input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="email"], input[type="date"]:focus {vertical-align:middle}
-
-
 input[type="number"]::-webkit-outer-spin-button, 
 input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none; margin:0}
 textarea {-webkit-border-radius:0; -webkit-appearance:none; border-radius: 0; appearance: none;}
