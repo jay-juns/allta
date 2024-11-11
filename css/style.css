@@ -48,3 +48,40 @@ body {
     line-height: 1.2;
     font-weight: 700;
 }
+.contents .list_box {
+    display:flex; 
+    align-items:flex-start;
+    gap:2rem;
+    margin: 1.6rem 0;
+}
+.contents .list_box .left {
+    flex-shrink: 0;
+    min-width:11rem;
+}
+.contents .list_box .left > p {
+    display:flex;
+    justify-content: space-between;
+}
+.contents .list_box .left > p > span {
+    font-size:2rem;
+    font-weight:700;
+}
+.contents .list_box .right > p {
+    font-size:2rem;
+    font-weight:500;
+    position:relative;
+}
+.contents .list_box .right > .small {
+    font-size:1.6rem;
+    font-weight:400;
+}
+.contents .list_box .right > .spot {
+    margin-left:1.8rem;
+}
+.contents .list_box .right > .spot::after {
+    content:'●';
+    position:absolute;
+    left:-1.6rem;
+    top:.9rem;
+    font-size:.8rem;
+}
