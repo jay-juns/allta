@@ -61,7 +61,7 @@ address, em {font-style:normal}
 fieldset, img {border:0; vertical-align:middle}
 button {border:0; background-color:transparent; vertical-align:middle; cursor:pointer; outline:none;}
 /* button > span {position:relative;} */
-ul, ol, dl, dd, li {list-style:none}
+ul, ol, dl, dd, li {list-style:none; padding:0; margin:0;}
 input, textarea, select {border:0; vertical-align:middle;}
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display:block}
 a {text-decoration:none; color:#212121; outline:none;}

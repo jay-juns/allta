@@ -45,8 +45,29 @@ body {
     margin:1.2rem 0;
     font-family: 'GmarketSans', sans-serif;
     font-size:4rem;
-    line-height: 1.2;
+    line-height: 1.45;
     font-weight: 700;
+}
+.contents .main_tit {
+    font-size:4rem;
+    line-height:1.45;
+    font-weight:700;
+}
+.contents .tit {
+    font-size:2.8rem;
+    font-weight:700;
+    line-height:1.45;
+}
+.contents .sub_txt {
+    font-size: 2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    display: inline-block;
 }
 .contents .list_box {
     display:flex; 
@@ -84,4 +105,88 @@ body {
     left:-1.6rem;
     top:.9rem;
     font-size:.8rem;
+}
+.contents .list_gray__box {
+    background-color: #f1f1f1;
+    padding:5rem;
+    margin:5rem 0;
+}
+.contents .list_gray__box > .tit {
+    font-size:3.2rem;
+    margin:1.6rem 0;
+    font-weight:700;
+}
+.contents .list_gray__box ul > li {
+    margin:.8rem 0 0;
+}
+.contents .list_gray__box ul > li:first-child {
+    margin:0;
+}
+.contents .list_gray__box ul > li > span {
+   font-size:2.4rem;
+   font-weight:700; 
+}
+.contents .list_gray__box ul > li > p {
+    font-size:2rem;
+    font-weight:400;
+    margin:0 0 0 .8rem;
+    line-height:1.4;
+}
+.contents .schedule_line {
+    margin: auto;
+    width: 64rem;
+}
+.contents .schedule_line > ul > li {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight:500;
+}
+.contents .schedule_line > ul > li > label {
+    width:12rem;
+}
+.contents .schedule_line > ul > li > label:before {
+    content: "DAY ";
+}
+.contents .schedule_line > ul > li:first-child > label:before, .contents .schedule_line > ul > li:last-child > label:before {
+    content: ""; 
+}
+.contents .schedule_line > ul > li > div {
+    position: relative;
+}
+.contents .schedule_line > ul > li > div:before {
+    display: block;
+    content: "";
+    width: 2px;
+    height: calc(100% + 5px);
+    background-color: #000;
+    display: inline-block;
+    position: absolute;
+    left: -33px;
+    top: 19px;
+}
+.contents .schedule_line > ul > li:last-child > div::before {
+    display:none;
+}
+.contents .schedule_line > ul > li > div:after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #000;
+    display: inline-block;
+    position: absolute;
+    left: -40px;
+    top: 4px;
+    border-radius: 50%;
+}
+.contents .schedule_line > ul > li > div > ul {
+    width:31rem;
+}
+.contents .schedule_line .exp_txt {
+    margin:.8rem 0;
+    font-size:1.4rem;
+    color:#f00; 
+    text-align:left;
 }
