@@ -118,34 +118,34 @@
     gap:20px;
     margin: 16px 0;
 }
-.jay-contents .jay-list_box .left {
+.jay-contents .jay-list_box .jay-left {
     flex-shrink: 0;
     min-width:110px;
 }
-.jay-contents .jay-list_box .left > p {
+.jay-contents .jay-list_box .jay-left > p {
     display:flex;
     justify-content: space-between;
     margin:0;
 
 }
-.jay-contents .jay-list_box .left > p > span {
+.jay-contents .jay-list_box .jay-left > p > span {
     font-size:20px;
     font-weight:700;
 }
-.jay-contents .jay-list_box .right > p {
+.jay-contents .jay-list_box .jay-right > p {
     font-size:20px;
     font-weight:500;
     position:relative;
     margin:0;
 }
-.jay-contents .jay-list_box .right > .small {
+.jay-contents .jay-list_box .jay-right > .jay-small {
     font-size:16px;
     font-weight:400;
 }
-.jay-contents .jay-list_box .right > .spot {
+.jay-contents .jay-list_box .jay-right > .jay-spot {
     margin-left:18px;
 }
-.jay-contents .jay-list_box .right > .spot::after {
+.jay-contents .jay-list_box .jay-right > .jay-spot::after {
     content:'●';
     position:absolute;
     left:-16px;
@@ -182,11 +182,11 @@
     margin:0 0 0 8px;
     line-height:1.4;
 }
-.jay-contents .schedule_line {
+.jay-contents .jay-schedule_line {
     margin: auto;
     width: 640px;
 }
-.jay-contents .schedule_line > ul > li {
+.jay-contents .jay-schedule_line > ul > li {
     display: flex;
     gap: 20px;
     position: relative;
@@ -194,19 +194,19 @@
     font-size: 20px;
     font-weight:500;
 }
-.jay-contents .schedule_line > ul > li > label {
+.jay-contents .jay-schedule_line > ul > li > label {
     width:120px;
 }
-.jay-contents .schedule_line > ul > li > label:before {
+.jay-contents .jay-schedule_line > ul > li > label:before {
     content: "DAY ";
 }
-.jay-contents .schedule_line > ul > li:first-child > label:before, .jay-contents .schedule_line > ul > li:last-child > label:before {
+.jay-contents .jay-schedule_line > ul > li:first-child > label:before, .jay-contents .jay-schedule_line > ul > li:last-child > label:before {
     content: ""; 
 }
-.jay-contents .schedule_line > ul > li > div {
+.jay-contents .jay-schedule_line > ul > li > div {
     position: relative;
 }
-.jay-contents .schedule_line > ul > li > div:before {
+.jay-contents .jay-schedule_line > ul > li > div:before {
     display: block;
     content: "";
     width: 2px;
@@ -217,10 +217,10 @@
     left: -33px;
     top: 19px;
 }
-.jay-contents .schedule_line > ul > li:last-child > div::before {
+.jay-contents .jay-schedule_line > ul > li:last-child > div::before {
     display:none;
 }
-.jay-contents .schedule_line > ul > li > div:after {
+.jay-contents .jay-schedule_line > ul > li > div:after {
     content: "";
     width: 16px;
     height: 16px;
@@ -231,10 +231,10 @@
     top: 4px;
     border-radius: 50%;
 }
-.jay-contents .schedule_line > ul > li > div > ul {
+.jay-contents .jay-schedule_line > ul > li > div > ul {
     width:310px;
 }
-.jay-contents .schedule_line .exp_txt {
+.jay-contents .jay-schedule_line .exp_txt {
     margin:8px 0;
     font-size:13px;
     color:#f00; 
