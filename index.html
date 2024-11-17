@@ -5,12 +5,284 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>태초 자연속으로... 뉴질랜드 남섬 라이딩</title>
-        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <style>
+                /* 폰트 */
+                @font-face {
+                        font-family: 'Noto Sans KR';
+                        font-style: normal;
+                        font-weight: 300;
+                        src: url('../fonts/NotoSansKR-Light.ttf') format('truetype');
+                }
+                @font-face {
+                        font-family: 'Noto Sans KR';
+                        font-style: normal;
+                        font-weight: 400;
+                        src: url('../fonts/NotoSansKR-Regular.ttf') format('truetype');
+                }
+                @font-face {
+                        font-family: 'Noto Sans KR';
+                        font-style: normal;
+                        font-weight: 500;
+                        src: url('../fonts/NotoSansKR-Medium.ttf') format('truetype');
+                }
+                @font-face {
+                        font-family: 'Noto Sans KR';
+                        font-style: normal;
+                        font-weight: 700;
+                        src: url('../fonts/NotoSansKR-Bold.ttf') format('truetype');
+                }
+                @font-face {
+                        font-family: 'Noto Sans KR';
+                        font-style: normal;
+                        font-weight: 900;
+                        src: url('../fonts/NotoSansKR-Black.ttf') format('truetype');
+                }
+                .jay {
+                        width:100%;
+                        height:100%;
+                        color:#212121;
+                        font-size:14px;
+                        font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum','AppleGothic',sans-serif;
+                        line-height: 1.45;
+                        font-weight:400;
+                        word-wrap:break-word;
+                        word-break:keep-all;
+                        padding: 0;
+                        margin:0;
+                        background-color:#f8fafc;
+                }
+                .jay-container {
+                        width:100%;
+                        height:100%;
+                }
+                /* 레이아웃 영역 */
+                .jay-main {
+                        width:100%;
+                        max-width:768px;
+                        margin:0 auto;
+                }
+                .jay-main .jay-contents {
+                        padding:20px;
+                        margin:15px 0 0;
+                }
+                /* 컨텐츠 영역 */
+                .jay-contents h2 {
+                        margin:12px 0;
+                        font-size:40px;
+                        line-height: 1.45;
+                        font-weight: 700;
+                }
+                .jay-contents p {
+                        margin:0;
+                }
+                .jay-contents p img {
+                 max-width:100%;
+                }
+                .jay-contents ul {
+                        margin:0;
+                        padding:0;
+                }
+                .jay-contents ul li::marker {
+                        content: "";
+                        color: transparent;
+                        font-size: 0;
+                }
+                .jay-contents .jay-center {
+                        width:100%;
+                        max-width:560px;
+                        display:flex;
+                        justify-content: center;
+                }
+                .jay-contents .jay-center.pd {
+                        padding:0 0 30px;
+                }
+                .jay-contents .jay-center.pd-t {
+                        padding:120px 0 20px;
+                }
+                .jay-contents .jay-center.pd-b {
+                        padding:0 0 20px;
+                }
+                .jay-contents .jay-main_tit {
+                        font-size:40px;
+                        line-height:1.45;
+                        font-weight:700;
+                        text-align:center;
+                }
+                .jay-contents .jay-tit {
+                        font-size:28px;
+                        font-weight:700;
+                        line-height:1.45;
+                }
+                .jay-contents .jay-sub_txt {
+                        font-size: 20px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.45;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #000;
+                        display: inline-block;
+                }
+                .jay-contents .jay-list_box {
+                        display:flex;
+                        align-items:flex-start;
+                        gap:20px;
+                        margin: 16px 0;
+                }
+                .jay-contents .jay-list_box .jay-left {
+                        flex-shrink: 0;
+                        min-width:110px;
+                }
+                .jay-contents .jay-list_box .jay-left > p {
+                        display:flex;
+                        justify-content: space-between;
+                        margin:0;
+                }
+                .jay-contents .jay-list_box .jay-left > p > span {
+                        font-size:20px;
+                        font-weight:700;
+                }
+                .jay-contents .jay-list_box .jay-right > p {
+                        font-size:20px;
+                        font-weight:500;
+                        position:relative;
+                        margin:0;
+                }
+                .jay-contents .jay-list_box .jay-right > .jay-small {
+                        font-size:16px;
+                        font-weight:400;
+                }
+                .jay-contents .jay-list_box .jay-right > .jay-spot {
+                        margin-left:18px;
+                }
+                .jay-contents .jay-list_box .jay-right > .jay-spot::after {
+                        content:'●';
+                        position:absolute;
+                        left:-16px;
+                        top:9px;
+                        font-size:8px;
+                }
+                .jay-contents .jay-list_gray__box {
+                        background-color: #f1f1f1;
+                        padding:50px;
+                        margin:50px 0;
+                }
+                .jay-contents .jay-list_gray__box > .jay-tit {
+                        font-size:32px;
+                        margin:16px 0;
+                        font-weight:700;
+                }
+                .jay-contents .jay-list_gray__box ul {
+                        padding:0;
+                        margin:0;
+                }
+                .jay-contents .jay-list_gray__box ul > li {
+                        margin:8px 0 0;
+                }
+                .jay-contents .jay-list_gray__box ul > li:first-child {
+                        margin:0;
+                }
+                .jay-contents .jay-list_gray__box ul > li > span {
+                        font-size:24px;
+                        font-weight:700;
+                }
+                .jay-contents .jay-list_gray__box ul > li > p {
+                        font-size:20px;
+                        font-weight:400;
+                        margin:0 0 0 8px;
+                        line-height:1.4;
+                }
+                .jay-contents .jay-schedule_line {
+                        margin: auto;
+                        width: 640px;
+                }
+                .jay-contents .jay-schedule_line > ul > li {
+                        display: flex;
+                        gap: 20px;
+                        position: relative;
+                        padding-bottom: 20px;
+                        font-size: 20px;
+                        font-weight:500;
+                }
+                .jay-contents .jay-schedule_line > ul > li > label {
+                        width:120px;
+                }
+                .jay-contents .jay-schedule_line > ul > li > label:before {
+                        content: "DAY ";
+                }
+                .jay-contents .jay-schedule_line > ul > li:first-child > label:before, .jay-contents .jay-schedule_line
+                > ul > li:last-child > label:before {
+                        content: "";
+                }
+                .jay-contents .jay-schedule_line > ul > li > div {
+                        position: relative;
+                }
+                .jay-contents .jay-schedule_line > ul > li > div:before {
+                        display: block;
+                        content: "";
+                        width: 2px;
+                        height: calc(100% + 5px);
+                        background-color: #000;
+                        display: inline-block;
+                        position: absolute;
+                        left: -33px;
+                        top: 19px;
+                }
+                .jay-contents .jay-schedule_line > ul > li:last-child > div::before {
+                        display:none;
+                }
+                .jay-contents .jay-schedule_line > ul > li > div:after {
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        background-color: #000;
+                        display: inline-block;
+                        position: absolute;
+                        left: -40px;
+                        top: 4px;
+                        border-radius: 50%;
+                }
+                .jay-contents .jay-schedule_line > ul > li > div > ul {
+                        width:310px;
+                }
+                .jay-contents .jay-schedule_line .exp_txt {
+                        margin:8px 0;
+                        font-size:13px;
+                        color:#f00;
+                        text-align:left;
+                }
+                @media all and (max-width:768px) {
+                        .jay-main {
+                                max-width:100%;
+                        }
+                        .jay-contents .jay-center {
+                                flex-wrap: wrap;
+                        }
+                        .jay-contents .jay-center.pd-t {
+                                padding:60px 0 20px;
+                        }
+                        .jay-contents .jay-tit, .jay-contents .jay-center > strong {
+                                display:inline-block;
+                                white-space: nowrap;
+                        }
+                        .jay-contents .jay-list_box {
+                                flex-direction: column;
+                        }
+                        .jay-contents .jay-schedule_line {
+                                width:100%;
+                        }
+                        .jay-contents .jay-list_gray__box {
+                                padding: 20px;
+                        }
+                }
+        </style>
     </head>
     <body class="jay">
         <div class="jay-container">
                 <div class="jay-main">
                         <div class="jay-contents">
+                                <p><span style="font-size: 16px;"><img src="https://file.k-friends.kr/img/20240812/075732_0.jpg" alt="투어 가이드" /></span></p>
                                 <p><strong class="jay-main_tit">The Dragon Route</strong></p>
                                 <p><strong class="jay-tit">쇼류도(昇龍道)로 향하는 길</strong></p>
                                 <p><br></p>
@@ -51,7 +323,6 @@
                                         style="font-size: 20px; color: rgb(0, 138, 0);">공식적으로&nbsp;인증 받은 현지 투어 가이드</strong><span
                                         class="jay-sub_txt">가 여러분을 최고의 알프스 라이딩투어로 이끌어줍니다.</span></p>
                                 <p><br></p>
-                                <p><span style="font-size: 16px;"><img src="https://file.k-friends.kr/img/20240812/075732_0.jpg" alt="투어 가이드" /></span></p>
                                 <p><br></p>
                                 <p><br></p>
                                 <p>@[투어가이드영상](TLGGar-7X-gqnpIwNjA5MjAyNA)</p>
